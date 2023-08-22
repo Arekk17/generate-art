@@ -30,7 +30,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, colors }) => {
               style={{
                 backgroundColor: `rgb(${color.r}, ${color.g}, ${color.b})`,
                 width: '350px',
-                height: '130px'
+                height: '110px'
               }}
             />
           ))}
