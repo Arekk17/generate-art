@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import PadLock from '@/assets/padlock.svg';
-import Scrolling from '@/assets/scrolling.svg';
-import character from '@/assets/character.svg';
+import PadLock from '@/public/padlock.svg';
+import Scrolling from '@/public/scrolling.svg';
+import character from '@/public/character.svg';
 import { BackArrow } from '../SVG/BackArrow';
 import { RedButton } from '../Button/RedButton';
 

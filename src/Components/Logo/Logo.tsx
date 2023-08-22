@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '@/assets/logo.svg';
+import logo from '@/public/logo.svg';
 
 export const LogoWithText = () => {
   return (

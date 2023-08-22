@@ -2,7 +2,7 @@
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import Image from 'next/image';
-import pen from '@/assets/pen.svg';
+import pen from '@/public/pen.svg';
 
 interface FormData {
   inputField: string;

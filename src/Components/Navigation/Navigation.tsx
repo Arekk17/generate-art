@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import HamburgerMenuIcon from '../SVG/HamburgerMenuIcon';
-import CartIcon from '@/assets/carticon.svg'
+import CartIcon from '@/public/carticon.svg'
 import Person from '../SVG/Person';
-import HeartIcon from '@/assets/heart.svg'
+import HeartIcon from '@/public/heart.svg'
 
 export const Navbar = () => {
   return (

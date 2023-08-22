@@ -4,7 +4,7 @@ import Image from 'next/image';
 import ColormindAPI from '@/api/ColormindAPI';
 import { Modal } from '../Modal/ColorModal';
 import { RedButton } from '../Button/RedButton';
-import InspiratedImage from '@/assets/inspirated.svg'
+import InspiratedImage from '@/public/inspirated.svg'
 
 export const Inspirated = () => {
     const [generatedColors, setGeneratedColors] = useState<any[]>([]);
