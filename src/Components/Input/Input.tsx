@@ -2,13 +2,13 @@
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import Image from 'next/image';
-import pen from '../../assets/pen.png';
+import pen from '@/assets/pen.svg';
 
 interface FormData {
   inputField: string;
 }
 
-const FormComponent: React.FC = () => {
+export const FormComponent: React.FC = () => {
   const {
     register,
     handleSubmit,
@@ -44,5 +44,3 @@ const FormComponent: React.FC = () => {
     </form>
   );
 };
-
-export default FormComponent;

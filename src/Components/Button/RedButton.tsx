@@ -4,7 +4,7 @@ interface ButtonProps{
     onClick: any
 }
 
-const RedButton:React.FC<ButtonProps> = ({ children, onClick }) => {
+export const RedButton:React.FC<ButtonProps> = ({ children, onClick }) => {
   return (
     <button
       onClick={onClick}
@@ -14,5 +14,3 @@ const RedButton:React.FC<ButtonProps> = ({ children, onClick }) => {
     </button>
   );
 };
-
-export default RedButton;

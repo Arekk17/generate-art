@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import PadLock from '@/assets/padlock.png';
-import Scrolling from '@/assets/scrolling.png';
+import PadLock from '@/assets/padlock.svg';
+import Scrolling from '@/assets/scrolling.svg';
 import character from '@/assets/character.svg';
 import { BackArrow } from '../SVG/BackArrow';
-import RedButton from '../Button/RedButton';
+import { RedButton } from '../Button/RedButton';
 
-const GrayRectangle = () => {
+export const GrayRectangle = () => {
   const handleButtonClick = () => {
     console.log('Clicked!');
   };
@@ -24,8 +24,8 @@ const GrayRectangle = () => {
       <div className="w-1/2 p-4 flex flex-col items-center justify-center">
         <p className="text-black mb-4">MINIMALISTIC</p>
         <div className='flex flex-row items-center'>
-          <div className='mb-1'>
-            <Image src={Scrolling} alt='scrolling' width={28} height={28}/>
+          <div className='mb-1 w-8'>
+            <Image src={Scrolling} alt='scrolling'/>
           </div>
           <RedButton onClick={handleButtonClick()}>CARTOON</RedButton>
         </div>
@@ -36,5 +36,3 @@ const GrayRectangle = () => {
     </div>
   );
 };
-
-export default GrayRectangle;

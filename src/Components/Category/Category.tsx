@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GraySquaresLine = () => {
+export const Category = () => {
   return (
     <div className="flex gap-2 justify-center ml-4 mr-4">
       <div className="w-40 h-16 bg-[#F5F5F6] flex items-center justify-center rounded-md">High Quality</div>
@@ -10,4 +10,3 @@ const GraySquaresLine = () => {
   );
 };
 
-export default GraySquaresLine;

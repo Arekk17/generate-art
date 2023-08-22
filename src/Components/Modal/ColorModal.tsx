@@ -6,7 +6,7 @@ interface ModalProps {
   colors: { r: number; g: number; b: number }[];
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, colors }) => {
+export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, colors }) => {
   if (!isOpen) {
     return null;
   }
@@ -39,5 +39,3 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, colors }) => {
     </div>
   );
 };
-
-export default Modal;

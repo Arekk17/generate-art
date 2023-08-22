@@ -1,10 +1,10 @@
-import GrayRectangle from '@/Components/Cartoon/Cartoon';
-import GraySquaresLine from '@/Components/Category/Category';
-import FormComponent from '@/Components/Input/Input';
+import { GrayRectangle } from '@/Components/Cartoon/Cartoon';
+import { Category }from '@/Components/Category/Category';
+import { FormComponent } from '@/Components/Input/Input';
 import { Inspirated } from '@/Components/Inspirated/Inspirated';
-import ProgressBar from '@/Components/LineStart';
-import LogoWithText from '@/Components/Logo/Logo';
-import Navbar from '@/Components/Navigation/Navigation';
+import { ProgressBar } from '@/Components/LineStart/LineStart';
+import { LogoWithText } from '@/Components/Logo/Logo';
+import { Navbar}  from '@/Components/Navigation/Navigation';
 import React from 'react';
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <div className='mb-10'>
         <FormComponent />
-        <GraySquaresLine />
+        <Category />
       </div>
       <div className='mb-10 flex align-center'>
         <GrayRectangle/>

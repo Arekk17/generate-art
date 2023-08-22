@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import ColormindAPI from '@/api/ColormindAPI';
-import Modal from '../Modal/ColorModal';
-import RedButton from '../Button/RedButton';
-import InspiratedImage from '@/assets/InspiratedImage.png'
+import { Modal } from '../Modal/ColorModal';
+import { RedButton } from '../Button/RedButton';
+import InspiratedImage from '@/assets/inspirated.svg'
 
 export const Inspirated = () => {
     const [generatedColors, setGeneratedColors] = useState<any[]>([]);
@@ -23,8 +23,8 @@ export const Inspirated = () => {
       setIsModalOpen(false);
     };
   return (
-    <div className="flex items-center justify-center">
-      <div className="bg-[#E3E4E742] p-6 rounded-lg shadow-md ml-3 mr-3 ">
+    <div className="flex items-center justify-center w-full">
+      <div className="bg-[#E3E4E742] p-6 rounded-lg shadow-md ml-3 mr-3 w-full">
         <h2 className="text-xl font-semibold mb-2 text-red text-center">Get Inspired!</h2>
         <h3 className="text-xl font-semibold mb-2 text-black text-center">BEST USERS DESIGNS</h3>
         <p className="text-gray-600 mb-2 text-center">See more</p>
@@ -32,18 +32,20 @@ export const Inspirated = () => {
             <Image src={InspiratedImage} alt='inpirated image ' />
         </div>
         <div className="relative w-full mb-6">
-          <input
-            className="appearance-none bg-gradient-to-t from-neutral-100 via-neutral-200 to-neutral-200 rounded-xl h-12 w-full pl-8 leading-tight focus:outline-none focus:border-gray-600 shadow-md"
-            type="text"
-            placeholder="punk heart, gothic"
-            style={{ paddingRight: '4rem' }}
-          />
+          <div
+            className="
+              flex items-center justify-start
+              appearance-none
+              bg-gradient-to-t from-neutral-100 via-neutral-200 to-neutral-200 
+              rounded-xl h-12 pl-8 leading-tight focus:outline-none 
+            focus:border-gray-600 shadow-md"
+          >punk heart, gothic</div>
           <div
             className="
             flex items-center
             absolute right-0 top-0 
             bg-gradient-to-t from-neutral-200 via-neutral-300 to-neutral-300 
-            text-black font-bold py-1 px-4 rounded-r h-12"
+            text-black  py-1 px-4 rounded-r h-12"
           >
             Inspirated
           </div>
@@ -56,5 +58,3 @@ export const Inspirated = () => {
     </div>
   );
 };
-
-export default Inspirated;

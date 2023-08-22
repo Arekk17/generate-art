@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../../assets/logo.png';
+import logo from '@/assets/logo.svg';
 
-const LogoWithText = () => {
+export const LogoWithText = () => {
   return (
     <div className="flex flex-col items-center space-y-4 mt-6">
       <Image src={logo} alt="Logo" />
@@ -13,4 +13,3 @@ const LogoWithText = () => {
   );
 };
 
-export default LogoWithText;
