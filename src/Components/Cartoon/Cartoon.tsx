@@ -11,7 +11,7 @@ export const GrayRectangle = () => {
     console.log('Clicked!');
   };
   return (
-    <div className="w-80 h-40 bg-[#E3E4E7] flex ml-10">
+    <div className="bg-[#E3E4E7] flex ml-10">
       <div className="w-1/2 bg-white flex flex-col items-center justify-center">
         <div className="flex items-center mb-2">
             <div className='mt-4'>
