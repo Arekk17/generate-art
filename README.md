@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-### Wymagania systemowe:
+### System requirements:
 
 Before you start working with the project, make sure that the following tools are installed on your computer:
 
