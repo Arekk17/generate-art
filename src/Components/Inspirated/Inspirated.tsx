@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
-import ColormindAPI from '@/api/ColormindAPI';
+import getGeneratedColors from '@/api/ColormindAPI'
 import { Modal } from '../Modal/ColorModal';
 import { RedButton } from '../Button/RedButton';
 import InspiratedImage from '@/public/inspirated.svg'
@@ -12,7 +12,7 @@ export const Inspirated = () => {
   
     const handleButtonClick = async () => {
       try {
-        const colors = await ColormindAPI.getGeneratedColors();
+        const colors = await getGeneratedColors();
         setGeneratedColors(colors);
         setIsModalOpen(true);
       } catch (error) {
